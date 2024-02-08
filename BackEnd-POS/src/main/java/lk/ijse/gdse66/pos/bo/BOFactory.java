@@ -12,7 +12,7 @@ public class BOFactory {
         return boFactory == null ? boFactory = new BOFactory() : boFactory;
     }
 
-    public SuperBO getBO(BOTypes types)
+    public SuperBO getBO(BOTypes types) {
         switch (types) {
             case CUSTOMER:
                 return new CustomerBOImpl();
