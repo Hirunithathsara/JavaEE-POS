@@ -28,7 +28,7 @@ public class CORSFilter implements Filter {
     }
 
     @Override
-    public void destroy()
+    public void destroy() {
         // Cleanup code, if needed
     }
 }
