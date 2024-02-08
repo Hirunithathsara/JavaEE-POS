@@ -5,7 +5,7 @@ import lk.ijse.gdse66.pos.bo.custom.impl.*;
 public class BOFactory {
     private static BOFactory boFactory;
 
-    private BOFactory {
+    private BOFactory () {
     }
 
     public static BOFactory getBoFactory() {
