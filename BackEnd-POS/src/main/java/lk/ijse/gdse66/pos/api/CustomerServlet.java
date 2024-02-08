@@ -24,7 +24,7 @@ public class CustomerServlet extends HttpServlet {
     private final QueryBO queryBO = (QueryBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOM);
 
     @Resource(name = "java:comp/env/jdbc/pool")
-    DataSource pool;
+    DataSource pool
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
