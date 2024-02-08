@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class OrderDTO {
     private String id;
     private String date;
-    private String customerId
+    private String customerId;
 }
