@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @WebServlet(urlPatterns = "/customer")
 public class CustomerServlet extends HttpServlet {
     private final CustomerBO customerBO = (CustomerBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOMER);
-    private final QueryBO queryBO = (QueryBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOM);
+    private final QueryBO queryBO = (Query) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOM);
 
     @Resource(name = "java:comp/env/jdbc/pool")
     DataSource pool;
