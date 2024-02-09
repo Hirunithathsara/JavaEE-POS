@@ -24,7 +24,7 @@ public class ItemServlet extends HttpServlet {
     private final QueryBO queryBO = (QueryBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.CUSTOM);
 
     @Resource(name = "java:comp/env/jdbc/pool")
-    DataSource dataSource;
+    DataSource dataSource
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
