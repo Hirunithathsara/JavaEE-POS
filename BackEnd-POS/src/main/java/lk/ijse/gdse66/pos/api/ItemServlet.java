@@ -31,7 +31,7 @@ public class ItemServlet extends HttpServlet {
         String code = req.getParameter("code");
         String option = req.getParameter("option");
 
-        JsonArrayBuilder allItems = Json.createArrayBuilder();
+        JsonArrayBuilder allItems = Json.createArrayBuilder()
         switch (option) {
             case "searchItemCode":
                 try (Connection connection = dataSource.getConnection()) {
